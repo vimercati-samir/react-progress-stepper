@@ -1,11 +1,49 @@
 "use strict";
 
-var _react = _interopRequireDefault(require("react"));
-
-var _reactDom = _interopRequireDefault(require("react-dom"));
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "Stepper", {
+  enumerable: true,
+  get: function get() {
+    return _ProgressStepper.Stepper;
+  }
+});
+Object.defineProperty(exports, "Step", {
+  enumerable: true,
+  get: function get() {
+    return _ProgressStepper.Step;
+  }
+});
+Object.defineProperty(exports, "useStepper", {
+  enumerable: true,
+  get: function get() {
+    return _ProgressStepper.useStepper;
+  }
+});
+Object.defineProperty(exports, "StepNumber", {
+  enumerable: true,
+  get: function get() {
+    return _ProgressStepper.StepNumber;
+  }
+});
+Object.defineProperty(exports, "StepTitle", {
+  enumerable: true,
+  get: function get() {
+    return _ProgressStepper.StepTitle;
+  }
+});
+Object.defineProperty(exports, "StepStatus", {
+  enumerable: true,
+  get: function get() {
+    return _ProgressStepper.StepStatus;
+  }
+});
+Object.defineProperty(exports, "StepDescription", {
+  enumerable: true,
+  get: function get() {
+    return _ProgressStepper.StepDescription;
+  }
+});
 
 var _ProgressStepper = require("./components/ProgressStepper");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_react.default.StrictMode, null, /*#__PURE__*/_react.default.createElement(_ProgressStepper.Stepper, null, /*#__PURE__*/_react.default.createElement(_ProgressStepper.Step, null, /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepNumber, null), /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepTitle, null, "Card Details"), /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepStatus, null), /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepDescription, null, "lorem ipsum dolor sit amet")), /*#__PURE__*/_react.default.createElement(_ProgressStepper.Step, null, /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepNumber, null), /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepTitle, null, "Form review"), /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepStatus, null), /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepDescription, null, "lorem ipsum dolor sit amet")), /*#__PURE__*/_react.default.createElement(_ProgressStepper.Step, null, /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepNumber, null), /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepTitle, null, "Authenticate OTP"), /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepStatus, null), /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepDescription, null, "lorem ipsum dolor sit amet")), /*#__PURE__*/_react.default.createElement(_ProgressStepper.Step, null, /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepNumber, null), /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepTitle, null, "Create Code"), /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepStatus, null), /*#__PURE__*/_react.default.createElement(_ProgressStepper.StepDescription, null, "lorem ipsum dolor sit amet")))), document.getElementById("root"));
