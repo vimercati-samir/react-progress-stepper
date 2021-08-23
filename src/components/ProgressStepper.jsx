@@ -377,20 +377,20 @@ const ProgressBar = styled.div`
 `;
 
 const useStepper = (defaultValue, numberOfSteps) => {
-  const [step, setStep] = useState(defaultValue || 0);
+  const [step, setStep] = useState(defaultValue || 1);
 
   const goToStep = (stepNumber) => {
-    if (stepNumber >= 0 && stepNumber <= numberOfSteps) setStep(stepNumber);
+    if (stepNumber >= 1 && stepNumber <= numberOfSteps + 1) setStep(stepNumber);
   };
 
   const incrementStep = () => {
-    if (step < numberOfSteps) {
+    if (step < numberOfSteps + 1) {
       setStep((prevState) => prevState + 1);
     }
   };
 
   const decrementStep = () => {
-    if (step !== 0) {
+    if (step !== 1) {
       setStep((prevState) => prevState - 1);
     }
   };
@@ -488,7 +488,6 @@ const Step = (props) => {
     isStepPending,
     vertical,
     numbered,
-    disableAnimation,
     customContent,
     theme,
   } = props;
@@ -511,12 +510,10 @@ const Step = (props) => {
       >
         {!customContent ? (
           <>
-            {(!isStepCompleted || disableAnimation) && numbered && (
+            {!isStepCompleted && numbered && (
               <Number className="number">{currentStep}</Number>
             )}
-            {isStepCompleted && !disableAnimation && (
-              <CheckMark theme={theme.checkMark} />
-            )}
+            {isStepCompleted && <CheckMark theme={theme.checkMark} />}
           </>
         ) : (
           <CustomContent />
@@ -568,7 +565,7 @@ const Step = (props) => {
 
 const Stepper = (props) => {
   const {
-    step = 0,
+    step = 1,
     vertical = false,
     dark = false,
     numbered = true,
@@ -695,8 +692,8 @@ const Stepper = (props) => {
           props.children.constructor === Array &&
           props.children.map((children, i) => {
             const isLastStep = props.children.length - 1 === i;
-            const isStepInProgress = step === i;
-            const isStepCompleted = step > i;
+            const isStepInProgress = step - 1 === i;
+            const isStepCompleted = step - 1 > i;
 
             return (
               <React.Fragment key={i}>
