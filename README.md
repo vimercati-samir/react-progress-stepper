@@ -1,15 +1,11 @@
-![npm bundle size](https://img.shields.io/bundlephobia/min/react-progress-stepper)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/vimercati-samir/react-progress-stepper)
-
 # React Progress Stepper
 
 Minimal and beautiful stepper for React.
 
 [LIVE DEMO](https://vimercati-samir.github.io/react-progress-stepper/?path=/story/examples--progress-stepper)
 
-![Stepper gif](https://raw.githubusercontent.com/vimercati-samir/files/c6f23fc0476cabc2e8719bf82603a895645f5b78/2021-08-23%2000.55.35.gif?token=AMTKVNHAH4QUPYDAIP5ATP3BEN5HO)
-
-![Stepper dark gif](https://raw.githubusercontent.com/vimercati-samir/files/c6f23fc0476cabc2e8719bf82603a895645f5b78/2021-08-23%2000.51.08.gif?token=AMTKVNGKWDM7RED7MSL4LC3BEN5KA)
+<img src="./docs/stepper.gif" alt="Stepper gif">
+<img src="./docs/stepper_dark.gif" alt="Stepper dark gif">
 
 ## Installation
 
@@ -65,8 +61,8 @@ export default const App = () => {
 
 ### Content
 
-![Stepper with content gif](https://raw.githubusercontent.com/vimercati-samir/files/c6f23fc0476cabc2e8719bf82603a895645f5b78/2021-08-23%2000.43.42.gif?token=AMTKVNARPRTMVXN2LITWYX3BEN5PK)
-
+<img src="./docs/stepper_content.gif" alt="Stepper with content gif">    
+  
 ```js
 import React from 'react';
 import {
@@ -80,36 +76,37 @@ import {
 } from "react-progress-stepper";
 
 export default const App = () => {
-  const { step, incrementStep, decrementStep } = useStepper(1, 3);
+const { step, incrementStep, decrementStep } = useStepper(1, 3);
 
-  return (
-    <>
-      <Stepper step={step}>
-        <Stepper step={step}>
-          <Step>
-            <StepNumber />
-            <StepTitle>Title</StepTitle>
-            <StepStatus />
-            <StepDescription>Description</StepDescription>
-          </Step>
-          <Step>
-            <StepNumber />
-            <StepTitle>Title</StepTitle>
-            <StepStatus />
-            <StepDescription>Description</StepDescription>
-          </Step>
-          <Step>
-            <StepNumber />
-            <StepTitle>Title</StepTitle>
-            <StepStatus />
-            <StepDescription>Description</StepDescription>
-          </Step>
-        </Stepper>
-      </Stepper>
-    </>
-  )
+return (
+<>
+<Stepper step={step}>
+<Stepper step={step}>
+<Step>
+<StepNumber />
+<StepTitle>Title</StepTitle>
+<StepStatus />
+<StepDescription>Description</StepDescription>
+</Step>
+<Step>
+<StepNumber />
+<StepTitle>Title</StepTitle>
+<StepStatus />
+<StepDescription>Description</StepDescription>
+</Step>
+<Step>
+<StepNumber />
+<StepTitle>Title</StepTitle>
+<StepStatus />
+<StepDescription>Description</StepDescription>
+</Step>
+</Stepper>
+</Stepper>
+</>
+)
 }
-```
+
+````
 
 #### StepNumber
 
@@ -260,7 +257,7 @@ You can customize the appearance of the stepper in two ways:
     },
   },
 }
-```
+````
 
 2. Overriding the CSS using class names, example:
 
