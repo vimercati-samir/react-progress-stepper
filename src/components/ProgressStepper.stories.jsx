@@ -74,14 +74,37 @@ const TemplateContent = (props) => {
   const { numberOfSteps } = props;
 
   const { step, incrementStep, decrementStep } = useStepper(1, numberOfSteps);
+  
+  const buttonStyle = (type) => ({
+    position: "fixed",
+    left: "50%",
+    bottom: "40px",
+    transform: `translateX(calc(-50% ${
+      type === "prev" ? "- 100px" : "+ 100px"
+    }))`,
+    border: "0",
+    padding: "12px 30px",
+    borderRadius: "2.5em",
+    background: props.dark
+      ? type === "prev"
+        ? "#1a1a1a"
+        : "#19b6fe"
+      : type === "prev"
+      ? "#fff"
+      : "#3c3fed",
+    color: props.dark ? "#fff" : type === "prev" ? "#000" : "#fff",
+    boxShadow: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+    cursor: "pointer",
+  });
 
   return (
+    <>
     <div
       style={{
         position: "absolute",
         left: "50%",
-        top: "50%",
-        transform: "translate(-50%, -50%)",
+        top: "-50%",
+        transform: "translate(-50%, 40%)",
         width: "calc(100% - (20px))",
         height: "calc(100% - (20px))",
         background: props.dark ? "#000" : "#fff",
@@ -100,6 +123,13 @@ const TemplateContent = (props) => {
         ))}
       </Stepper>
     </div>
+    <button onClick={decrementStep} style={buttonStyle("prev")}>
+        Prev
+      </button>
+      <button onClick={incrementStep} style={buttonStyle("next")}>
+        Next
+      </button>
+    </>
   );
 };
 
