@@ -5,9 +5,11 @@
 
 Minimal and beautiful stepper for React.
 
-![Stepper gif](https://raw.githubusercontent.com/vimercati-samir/files/master/2021-08-23%2000.55.35.gif?token=AMTKVNFDCDXEJGH2OWOCYFLBENWPC)
+[LIVE DEMO](https://vimercati-samir.github.io/react-progress-stepper/?path=/story/examples--progress-stepper)
 
-![Stepper dark gif](https://raw.githubusercontent.com/vimercati-samir/files/master/2021-08-23%2000.51.08.gif?token=AMTKVNEDUFAVDEG7655VEBDBENWOE)
+![Stepper gif](https://raw.githubusercontent.com/vimercati-samir/files/c6f23fc0476cabc2e8719bf82603a895645f5b78/2021-08-23%2000.55.35.gif?token=AMTKVNHAH4QUPYDAIP5ATP3BEN5HO)
+
+![Stepper dark gif](https://raw.githubusercontent.com/vimercati-samir/files/c6f23fc0476cabc2e8719bf82603a895645f5b78/2021-08-23%2000.51.08.gif?token=AMTKVNGKWDM7RED7MSL4LC3BEN5KA)
 
 ## Installation
 
@@ -35,7 +37,6 @@ export default const App = () => {
         <Step></Step>
         <Step></Step>
         <Step></Step>
-        <Step></Step>
       </Stepper>
       <button onClick={decrementStep}>Prev</button>
       <button onClick={incrementStep}>Next</button>
@@ -46,45 +47,25 @@ export default const App = () => {
 
 ## Modules
 
-### useStepper
-
-Hook to handle the state of stepper easily, you could write your own logic to handle the state, but why when it's already done for you ;) .
-
-To work properly you need to provide two arguments to useStepper:
-
-- **Number of current step**: starts from 1;
-- **Number of steps**.
-
-useStepper provides several utilities:
-
-- **step**: state to track the current step;
-- **incrementStep**: function to increment state by one;
-- **decrementStep**: function to decrement state by one;
-- **goToStep**: function to set state to a specific step number.
-
 ### Stepper
 
-Main component.
-
-Props:
-
-- **step**: state to track the current step;
-- **vertical**: toggle vertical view;
-- **dark**: toggle dark mode;
-- **numbered**: if each step is numbered or not;
-- **theme**: object to customize the appearance of the stepper, **read below to know more about theming and style overrides**.
+| Property   | Type    | Description                             |
+| ---------- | ------- | --------------------------------------- |
+| `step`     | Integer | State to track the current step         |
+| `vertical` | Boolean | Toggle vertical view                    |
+| `dark`     | Boolean | Toggle dark mode                        |
+| `numbered` | Boolean | Toggle if each step is numbered or not  |
+| `theme`    | Object  | Customize the appearance of the stepper |
 
 ### Step
 
-Step and progress bar component.
-
-Props:
-
-- **customContent**: JSX element to override the step circle content.
+| Property        | Type     | Description                  |
+| --------------- | -------- | ---------------------------- |
+| `customContent` | Function | Override step circle content |
 
 ### Content
 
-![Stepper with content gif](https://raw.githubusercontent.com/vimercati-samir/files/master/2021-08-23%2000.43.42.gif?token=AMTKVNCLCRXWV4QIUNMDFSDBENWRC)
+![Stepper with content gif](https://raw.githubusercontent.com/vimercati-samir/files/c6f23fc0476cabc2e8719bf82603a895645f5b78/2021-08-23%2000.43.42.gif?token=AMTKVNARPRTMVXN2LITWYX3BEN5PK)
 
 ```js
 import React from 'react';
@@ -123,18 +104,6 @@ export default const App = () => {
             <StepStatus />
             <StepDescription>Description</StepDescription>
           </Step>
-          <Step>
-            <StepNumber />
-            <StepTitle>Title</StepTitle>
-            <StepStatus />
-            <StepDescription>Description</StepDescription>
-          </Step>
-          <Step>
-            <StepNumber />
-            <StepTitle>Title</StepTitle>
-            <StepStatus />
-            <StepDescription>Description</StepDescription>
-          </Step>
         </Stepper>
       </Stepper>
     </>
@@ -144,29 +113,37 @@ export default const App = () => {
 
 #### StepNumber
 
-Component to show number of step.
-
-Props:
-
-- **text**
+| Property | Type   | Description    |
+| -------- | ------ | -------------- |
+| `text`   | String | Customize text |
 
 #### StepTitle
 
-Component to show title of step.
-
 #### StepStatus
 
-Component to show status of step (pending, in progress, completed).
-
-Props:
-
-- **textProgress**
-- **textCompleted**
-- **textPending**
+| Property        | Type   | Description    |
+| --------------- | ------ | -------------- |
+| `textProgress`  | String | Customize text |
+| `textCompleted` | String | Customize text |
+| `textPending`   | String | Customize text |
 
 #### StepDescription
 
-Component to show description of step.
+### useStepper
+
+Hook to handle the state of stepper easily, you could write your own logic to handle the state.
+
+To work properly you need to provide two arguments to useStepper:
+
+- **Number of current step**: starts from 1;
+- **Number of steps**.
+
+useStepper provides several utilities:
+
+- **step**: state to track the current step;
+- **incrementStep**: function to increment state by one;
+- **decrementStep**: function to decrement state by one;
+- **goToStep**: function to set state to a specific step number.
 
 ## Theming and style overrides
 
