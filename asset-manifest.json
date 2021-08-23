@@ -1,10 +1,10 @@
 {
   "files": {
     "0.ea1a291a.iframe.bundle.js": "./0.ea1a291a.iframe.bundle.js",
-    "main.js": "./main.66c479aa.iframe.bundle.js",
+    "main.js": "./main.c24fedc0.iframe.bundle.js",
     "runtime~main.js": "./runtime~main.28f5eca0.iframe.bundle.js",
-    "vendors~main.js": "./vendors~main.70e2330e.iframe.bundle.js",
-    "vendors~main.js.map": "./vendors~main.70e2330e.iframe.bundle.js.map",
+    "vendors~main.js": "./vendors~main.8f5cf8ca.iframe.bundle.js",
+    "vendors~main.js.map": "./vendors~main.8f5cf8ca.iframe.bundle.js.map",
     "4.7024a502.iframe.bundle.js": "./4.7024a502.iframe.bundle.js",
     "4.7024a502.iframe.bundle.js.map": "./4.7024a502.iframe.bundle.js.map",
     "5.d5048599.iframe.bundle.js": "./5.d5048599.iframe.bundle.js",
@@ -15,11 +15,11 @@
     "6.c9b1fff3.iframe.bundle.js.LICENSE.txt": "./6.c9b1fff3.iframe.bundle.js.LICENSE.txt",
     "iframe.html": "./iframe.html",
     "static/media/montserrat.e20d5327.ttf": "./static/media/montserrat.e20d5327.ttf",
-    "vendors~main.70e2330e.iframe.bundle.js.LICENSE.txt": "./vendors~main.70e2330e.iframe.bundle.js.LICENSE.txt"
+    "vendors~main.8f5cf8ca.iframe.bundle.js.LICENSE.txt": "./vendors~main.8f5cf8ca.iframe.bundle.js.LICENSE.txt"
   },
   "entrypoints": [
     "runtime~main.28f5eca0.iframe.bundle.js",
-    "vendors~main.70e2330e.iframe.bundle.js",
-    "main.66c479aa.iframe.bundle.js"
+    "vendors~main.8f5cf8ca.iframe.bundle.js",
+    "main.c24fedc0.iframe.bundle.js"
   ]
 }
