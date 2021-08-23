@@ -2,7 +2,7 @@
 
 Minimal and beautiful stepper for React.
 
-[LIVE DEMO](https://vimercati-samir.github.io/react-progress-stepper/?path=/story/examples--progress-stepper)
+[LIVE DEMO](https://vimercati-samir.github.io/react-progress-stepper)
 
 <img src="./docs/stepper.gif" alt="Stepper gif">
 <img src="./docs/stepper_dark.gif" alt="Stepper dark gif">
@@ -76,34 +76,32 @@ import {
 } from "react-progress-stepper";
 
 export default const App = () => {
-const { step, incrementStep, decrementStep } = useStepper(1, 3);
+  const { step, incrementStep, decrementStep } = useStepper(1, 3);
 
-return (
-<>
-<Stepper step={step}>
-<Stepper step={step}>
-<Step>
-<StepNumber />
-<StepTitle>Title</StepTitle>
-<StepStatus />
-<StepDescription>Description</StepDescription>
-</Step>
-<Step>
-<StepNumber />
-<StepTitle>Title</StepTitle>
-<StepStatus />
-<StepDescription>Description</StepDescription>
-</Step>
-<Step>
-<StepNumber />
-<StepTitle>Title</StepTitle>
-<StepStatus />
-<StepDescription>Description</StepDescription>
-</Step>
-</Stepper>
-</Stepper>
-</>
-)
+  return (
+    <>
+      <Stepper step={step}>
+        <Step>
+          <StepNumber />
+          <StepTitle>Title</StepTitle>
+          <StepStatus />
+          <StepDescription>Description</StepDescription>
+        </Step>
+        <Step>
+          <StepNumber />
+          <StepTitle>Title</StepTitle>
+          <StepStatus />
+          <StepDescription>Description</StepDescription>
+        </Step>
+        <Step>
+          <StepNumber />
+          <StepTitle>Title</StepTitle>
+          <StepStatus />
+          <StepDescription>Description</StepDescription>
+        </Step>
+      </Stepper>
+    </>
+  )
 }
 
 ````
