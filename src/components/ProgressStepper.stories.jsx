@@ -80,7 +80,7 @@ const TemplateContent = (props) => {
     left: "50%",
     bottom: "40px",
     transform: `translateX(calc(-50% ${
-      type === "prev" ? "- 100px" : "+ 100px"
+      type === "prev" ? "- 250px" : "+ 250px"
     }))`,
     border: "0",
     padding: "12px 30px",
@@ -98,13 +98,12 @@ const TemplateContent = (props) => {
   });
 
   return (
-    <>
     <div
       style={{
         position: "absolute",
         left: "50%",
-        top: "-50%",
-        transform: "translate(-50%, 40%)",
+        top: "50%",
+        transform: "translate(-50%, -50%)",
         width: "calc(100% - (20px))",
         height: "calc(100% - (20px))",
         background: props.dark ? "#000" : "#fff",
@@ -122,14 +121,14 @@ const TemplateContent = (props) => {
           </Step>
         ))}
       </Stepper>
-    </div>
-    <button onClick={decrementStep} style={buttonStyle("prev")}>
+      <button onClick={decrementStep} style={buttonStyle("prev")}>
         Prev
       </button>
       <button onClick={incrementStep} style={buttonStyle("next")}>
         Next
       </button>
-    </>
+    </div>
+  
   );
 };
 
