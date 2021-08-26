@@ -76,32 +76,32 @@ import {
 } from "react-progress-stepper";
 
 export default const App = () => {
-  const { step, incrementStep, decrementStep } = useStepper(1, 3);
+const { step, incrementStep, decrementStep } = useStepper(1, 3);
 
-  return (
-    <>
-      <Stepper step={step}>
-        <Step>
-          <StepNumber />
-          <StepTitle>Title</StepTitle>
-          <StepStatus />
-          <StepDescription>Description</StepDescription>
-        </Step>
-        <Step>
-          <StepNumber />
-          <StepTitle>Title</StepTitle>
-          <StepStatus />
-          <StepDescription>Description</StepDescription>
-        </Step>
-        <Step>
-          <StepNumber />
-          <StepTitle>Title</StepTitle>
-          <StepStatus />
-          <StepDescription>Description</StepDescription>
-        </Step>
-      </Stepper>
-    </>
-  )
+return (
+<>
+<Stepper step={step}>
+<Step>
+<StepNumber />
+<StepTitle>Title</StepTitle>
+<StepStatus />
+<StepDescription>Description</StepDescription>
+</Step>
+<Step>
+<StepNumber />
+<StepTitle>Title</StepTitle>
+<StepStatus />
+<StepDescription>Description</StepDescription>
+</Step>
+<Step>
+<StepNumber />
+<StepTitle>Title</StepTitle>
+<StepStatus />
+<StepDescription>Description</StepDescription>
+</Step>
+</Stepper>
+</>
+)
 }
 
 ````
@@ -149,10 +149,6 @@ You can customize the appearance of the stepper in two ways:
 ```js
 {
   light: {
-    checkMark: {
-      fillColor: "#23c275",
-      fillIconColor: "#ffffff",
-    },
     step: {
       pending: {
         background: "#ededed",
@@ -202,10 +198,6 @@ You can customize the appearance of the stepper in two ways:
     },
   },
   dark: {
-    checkMark: {
-      fillColor: "#23c275",
-      fillIconColor: "#ffffff",
-    },
     step: {
       pending: {
         background: "#1a1a1a",

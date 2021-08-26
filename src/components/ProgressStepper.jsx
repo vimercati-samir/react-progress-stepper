@@ -179,7 +179,7 @@ const CheckMarkStyled = styled.div`
   height: 5.5em;
   border-radius: 50%;
   margin: 0 auto;
-  background: ${(props) => props.theme.fillColor};
+  background: ${(props) => props.theme.background};
   font-size: 1em;
 `;
 
@@ -187,10 +187,10 @@ const SaIcon = styled.div`
   & {
     width: 5em;
     height: 5em;
-    border: 0.25em solid #23c275;
+    border: 0.25em solid ${(props) => props.theme.background};
     border-radius: 2.5em;
     border-radius: 50%;
-    border-color: #23c275;
+    border-color: ${(props) => props.theme.background};
     margin: auto;
     padding: 0;
     position: relative;
@@ -205,7 +205,7 @@ const SaIcon = styled.div`
     position: absolute;
     width: 3.75em;
     height: 7.5em;
-    background: #23c275;
+    background: ${(props) => props.theme.background};
     transform: rotate(45deg);
   }
   &:before {
@@ -226,7 +226,7 @@ const SaIcon = styled.div`
 
 const SaTip = styled.span`
   height: 0.3125em;
-  background-color: ${(props) => props.theme.fillIconColor};
+  background-color: ${(props) => props.theme.color};
   display: block;
   border-radius: 0.125em;
   position: absolute;
@@ -240,7 +240,7 @@ const SaTip = styled.span`
 
 const SaLong = styled.span`
   height: 0.3125em;
-  background-color: ${(props) => props.theme.fillIconColor};
+  background-color: ${(props) => props.theme.color};
   display: block;
   border-radius: 0.125em;
   position: absolute;
@@ -267,7 +267,7 @@ const SaPlaceholder = styled.div`
 const SaFix = styled.div`
   width: 0.3125em;
   height: 5.625em;
-  background-color: ${(props) => props.theme.fillColor};
+  background-color: ${(props) => props.theme.background};
   position: absolute;
   left: 1.75em;
   top: 0.5em;
@@ -533,7 +533,7 @@ const Step = (props) => {
             {!isStepCompleted && numbered && (
               <Number className="number">{currentStep}</Number>
             )}
-            {isStepCompleted && <CheckMark theme={theme.checkMark} />}
+            {isStepCompleted && <CheckMark theme={theme.step.completed} />}
           </>
         ) : (
           <CustomContent />
@@ -594,10 +594,6 @@ const Stepper = (props) => {
 
   const defaultTheme = {
     light: {
-      checkMark: {
-        fillColor: "#23c275",
-        fillIconColor: "#ffffff",
-      },
       step: {
         pending: {
           background: "#ededed",
@@ -647,10 +643,6 @@ const Stepper = (props) => {
       },
     },
     dark: {
-      checkMark: {
-        fillColor: "#23c275",
-        fillIconColor: "#ffffff",
-      },
       step: {
         pending: {
           background: "#1a1a1a",

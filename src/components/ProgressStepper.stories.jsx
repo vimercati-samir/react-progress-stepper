@@ -74,7 +74,7 @@ const TemplateContent = (props) => {
   const { numberOfSteps } = props;
 
   const { step, incrementStep, decrementStep } = useStepper(1, numberOfSteps);
-  
+
   const buttonStyle = (type) => ({
     position: "fixed",
     left: "50%",
@@ -128,7 +128,6 @@ const TemplateContent = (props) => {
         Next
       </button>
     </div>
-  
   );
 };
 
@@ -140,10 +139,6 @@ ProgressStepper.args = {
   numbered: true,
   theme: {
     light: {
-      checkMark: {
-        fillColor: "#23c275",
-        fillIconColor: "#ffffff",
-      },
       step: {
         pending: {
           background: "#ededed",
@@ -193,10 +188,6 @@ ProgressStepper.args = {
       },
     },
     dark: {
-      checkMark: {
-        fillColor: "#23c275",
-        fillIconColor: "#ffffff",
-      },
       step: {
         pending: {
           background: "#1a1a1a",
@@ -257,10 +248,6 @@ ProgressStepperContent.args = {
   numbered: true,
   theme: {
     light: {
-      checkMark: {
-        fillColor: "#23c275",
-        fillIconColor: "#ffffff",
-      },
       step: {
         pending: {
           background: "#ededed",
@@ -310,10 +297,6 @@ ProgressStepperContent.args = {
       },
     },
     dark: {
-      checkMark: {
-        fillColor: "#23c275",
-        fillIconColor: "#ffffff",
-      },
       step: {
         pending: {
           background: "#1a1a1a",
