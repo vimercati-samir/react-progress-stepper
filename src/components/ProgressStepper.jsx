@@ -538,13 +538,13 @@ const Step = (props) => {
         ) : (
           <CustomContent />
         )}
-        <Content
-          isLastStep={isLastStep}
-          vertical={vertical}
-          className={`content ${isLastStep ? "last" : ""}`}
-        >
-          {props.children &&
-            (props.children.constructor === Array
+        {props.children && (
+          <Content
+            isLastStep={isLastStep}
+            vertical={vertical}
+            className={`content ${isLastStep ? "last" : ""}`}
+          >
+            {props.children.constructor === Array
               ? props.children.map((children, i) => {
                   return (
                     <React.Fragment key={i}>
@@ -564,8 +564,9 @@ const Step = (props) => {
                   isStepCompleted: isStepCompleted,
                   isStepPending: isStepPending,
                   theme: theme.content[status],
-                }))}
-        </Content>
+                })}
+          </Content>
+        )}
       </StepStyled>
       {!isLastStep && (
         <ProgressBar
