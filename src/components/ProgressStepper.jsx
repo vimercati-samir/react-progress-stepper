@@ -701,17 +701,6 @@ const Stepper = (props) => {
     },
   };
 
-  function merge(a, b) {
-    var c = {};
-    for (var idx in a) {
-      c[idx] = a[idx];
-    }
-    for (var idx in b) {
-      c[idx] = b[idx];
-    }
-    return c;
-  }
-
   return (
     <>
       <GlobalFonts />
