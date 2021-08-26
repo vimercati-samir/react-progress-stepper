@@ -131,7 +131,7 @@ const animateSuccessLong = keyframes`
 const StepperStyled = styled.div`
   width: 100%;
   height: 100%;
-  font-size: 1rem;
+  font-size: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
