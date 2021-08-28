@@ -76,32 +76,32 @@ import {
 } from "react-progress-stepper";
 
 export default const App = () => {
-const { step, incrementStep, decrementStep } = useStepper(0, 3);
+  const { step, incrementStep, decrementStep } = useStepper(0, 3);
 
-return (
-<>
-<Stepper step={step}>
-<Step>
-<StepNumber />
-<StepTitle>Title</StepTitle>
-<StepStatus />
-<StepDescription>Description</StepDescription>
-</Step>
-<Step>
-<StepNumber />
-<StepTitle>Title</StepTitle>
-<StepStatus />
-<StepDescription>Description</StepDescription>
-</Step>
-<Step>
-<StepNumber />
-<StepTitle>Title</StepTitle>
-<StepStatus />
-<StepDescription>Description</StepDescription>
-</Step>
-</Stepper>
-</>
-)
+  return (
+    <>
+      <Stepper step={step}>
+        <Step>
+          <StepNumber />
+          <StepTitle>Title</StepTitle>
+          <StepStatus />
+          <StepDescription>Description</StepDescription>
+        </Step>
+        <Step>
+          <StepNumber />
+          <StepTitle>Title</StepTitle>
+          <StepStatus />
+          <StepDescription>Description</StepDescription>
+        </Step>
+        <Step>
+          <StepNumber />
+          <StepTitle>Title</StepTitle>
+          <StepStatus />
+          <StepDescription>Description</StepDescription>
+        </Step>
+      </Stepper>
+    </>
+  )
 }
 
 ````
