@@ -2,7 +2,7 @@
   "homepage": "https://github.com/vimercati-samir/react-progress-stepper.git",
   "name": "react-progress-stepper",
   "main": "dist/index.js",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": false,
   "files": [
     "dist",
