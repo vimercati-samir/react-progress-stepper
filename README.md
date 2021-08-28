@@ -25,7 +25,7 @@ import {
 } from "react-progress-stepper";
 
 export default const App = () => {
-  const { step, incrementStep, decrementStep } = useStepper(1, 3);
+  const { step, incrementStep, decrementStep } = useStepper(0, 3);
 
   return (
     <>
@@ -76,7 +76,7 @@ import {
 } from "react-progress-stepper";
 
 export default const App = () => {
-const { step, incrementStep, decrementStep } = useStepper(1, 3);
+const { step, incrementStep, decrementStep } = useStepper(0, 3);
 
 return (
 <>
@@ -130,7 +130,7 @@ Hook to handle the state of stepper easily, you could write your own logic to ha
 
 To work properly you need to provide two arguments to useStepper:
 
-- **Number of current step**: starts from 1;
+- **Number of current step**: starts from 0;
 - **Number of steps**.
 
 useStepper provides several utilities:

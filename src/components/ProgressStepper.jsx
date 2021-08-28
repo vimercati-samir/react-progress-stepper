@@ -397,20 +397,20 @@ const ProgressBar = styled.div`
 `;
 
 const useStepper = (defaultValue, numberOfSteps) => {
-  const [step, setStep] = useState(defaultValue || 1);
+  const [step, setStep] = useState(defaultValue || 0);
 
   const goToStep = (stepNumber) => {
-    if (stepNumber >= 1 && stepNumber <= numberOfSteps + 1) setStep(stepNumber);
+    if (step !== 0 && step < numberOfSteps) setStep(stepNumber);
   };
 
   const incrementStep = () => {
-    if (step < numberOfSteps + 1) {
+    if (step < numberOfSteps) {
       setStep((prevState) => prevState + 1);
     }
   };
 
   const decrementStep = () => {
-    if (step !== 1) {
+    if (step !== 0) {
       setStep((prevState) => prevState - 1);
     }
   };
@@ -586,7 +586,7 @@ const Step = (props) => {
 
 const Stepper = (props) => {
   const {
-    step = 1,
+    step = 0,
     vertical = false,
     dark = false,
     numbered = true,
@@ -707,8 +707,8 @@ const Stepper = (props) => {
           props.children.constructor === Array &&
           props.children.map((children, i) => {
             const isLastStep = props.children.length - 1 === i;
-            const isStepInProgress = step - 1 === i;
-            const isStepCompleted = step - 1 > i;
+            const isStepInProgress = step === i;
+            const isStepCompleted = step > i;
 
             return (
               <React.Fragment key={i}>
