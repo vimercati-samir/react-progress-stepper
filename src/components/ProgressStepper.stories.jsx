@@ -73,7 +73,7 @@ const TemplateNoContent = (props) => {
 const TemplateContent = (props) => {
   const { numberOfSteps } = props;
 
-  const { step, incrementStep, decrementStep } = useStepper(1, numberOfSteps);
+  const { step, incrementStep, decrementStep } = useStepper(0, numberOfSteps);
 
   const buttonStyle = (type) => ({
     position: "fixed",
