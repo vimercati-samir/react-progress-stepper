@@ -7,10 +7,14 @@ Minimal and beautiful stepper for React.
 <img src="https://i.ibb.co/dKD1dYq/samir-repo.png">
 <br/><br/>
 <a href="https://vimercati-samir.github.io/react-progress-stepper"><img src="https://img.shields.io/badge/LIVE DEMO-324A5E?style=flat"></a>
-<br/>
 </p>
 
-##### Content
+<p align="center">
+<br/>
+<img src="./docs/stepper.gif" alt="Stepper gif">
+<img src="./docs/stepper_dark.gif" alt="Stepper dark gif">
+<br/><br/>
+</p>
 
 - [Installation](#⚙️-installation)
 - [Usage](#✔️-usage)
@@ -25,13 +29,6 @@ Minimal and beautiful stepper for React.
   - [useStepper](#useStepper)
 - [Theming and Style Overrides](#🎨-theming-and-style-overrides)
 - [License and Credits](#✏️-license-and-credits)
-
-<p align="center">
-<br/><br/>
-<img src="./docs/stepper.gif" alt="Stepper gif">
-<img src="./docs/stepper_dark.gif" alt="Stepper dark gif">
-<br/><br/>
-</p>
 
 ## ⚙️ Installation
 
