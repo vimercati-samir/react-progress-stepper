@@ -13,7 +13,7 @@
 <br/>
 <img src="./docs/stepper.gif" alt="Stepper gif">
 <img src="./docs/stepper_dark.gif" alt="Stepper dark gif">
-<br/><br/><br/>
+<br/><br/>
 </p>
 
 ## ⚙️ Installation
@@ -22,6 +22,8 @@
 $ npm i react-progress-stepper
 $ yarn add react-progress-stepper
 ```
+
+<br/><br/>
 
 ## ✔️ Usage
 
