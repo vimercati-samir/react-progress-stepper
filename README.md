@@ -2,19 +2,29 @@
 
 Minimal and beautiful stepper for React.
 
-[LIVE DEMO](https://vimercati-samir.github.io/react-progress-stepper)
-
+<p align="center">
+<br/><br/>
 <img src="./docs/stepper.gif" alt="Stepper gif">
 <img src="./docs/stepper_dark.gif" alt="Stepper dark gif">
+<br/><br/>
+<a href="https://vimercati-samir.github.io/react-progress-stepper"><img src="https://img.shields.io/badge/LIVE DEMO-324A5E?style=flat"></a>
+<br/><br/>
+</p>
 
-## Installation
+##### Table of Contents
+
+⚙️ [Installation](#⚙️-installation)  
+✔️ [Usage](#✔️-usage)  
+✏️ [License and Credits](#✏️-license-and-credits)
+
+## ⚙️ Installation
 
 ```shell
 $ npm i react-progress-stepper
 $ yarn add react-progress-stepper
 ```
 
-## Usage
+## ✔️ Usage
 
 ```js
 import React from 'react';
@@ -41,7 +51,7 @@ export default const App = () => {
 }
 ```
 
-## Modules
+## 🔎 Modules
 
 ### Stepper
 
@@ -61,6 +71,8 @@ export default const App = () => {
 
 ### Content
 
+You can customize the content of each step, as the example below:
+
 <img src="./docs/stepper_content.gif" alt="Stepper with content gif">    
   
 ```js
@@ -76,32 +88,32 @@ import {
 } from "react-progress-stepper";
 
 export default const App = () => {
-  const { step, incrementStep, decrementStep } = useStepper(0, 3);
+const { step, incrementStep, decrementStep } = useStepper(0, 3);
 
-  return (
-    <>
-      <Stepper step={step}>
-        <Step>
-          <StepNumber />
-          <StepTitle>Title</StepTitle>
-          <StepStatus />
-          <StepDescription>Description</StepDescription>
-        </Step>
-        <Step>
-          <StepNumber />
-          <StepTitle>Title</StepTitle>
-          <StepStatus />
-          <StepDescription>Description</StepDescription>
-        </Step>
-        <Step>
-          <StepNumber />
-          <StepTitle>Title</StepTitle>
-          <StepStatus />
-          <StepDescription>Description</StepDescription>
-        </Step>
-      </Stepper>
-    </>
-  )
+return (
+<>
+<Stepper step={step}>
+<Step>
+<StepNumber />
+<StepTitle>Title</StepTitle>
+<StepStatus />
+<StepDescription>Description</StepDescription>
+</Step>
+<Step>
+<StepNumber />
+<StepTitle>Title</StepTitle>
+<StepStatus />
+<StepDescription>Description</StepDescription>
+</Step>
+<Step>
+<StepNumber />
+<StepTitle>Title</StepTitle>
+<StepStatus />
+<StepDescription>Description</StepDescription>
+</Step>
+</Stepper>
+</>
+)
 }
 
 ````
@@ -113,6 +125,7 @@ export default const App = () => {
 | `text`   | String | Customize text |
 
 #### StepTitle
+StepTitle comes with no property, you can easily customize it by simply putting some text inside of it.
 
 #### StepStatus
 
@@ -123,6 +136,7 @@ export default const App = () => {
 | `textPending`   | String | Customize text |
 
 #### StepDescription
+As StepTitle, you can customize StepDescription by putting text inside of it.
 
 ### useStepper
 
@@ -262,7 +276,7 @@ You can customize the appearance of the stepper in two ways:
 }
 ```
 
-## License and credits
+## ✏️ License and Credits
 
 react-progress-stepper is released under the MIT license, feel free to use it, share and modify.
 
