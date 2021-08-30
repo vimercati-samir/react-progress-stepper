@@ -23,7 +23,7 @@ $ npm i react-progress-stepper
 $ yarn add react-progress-stepper
 ```
 
-## ✔️ Usage
+## 🚀 Usage
 
 ```js
 import React from 'react';
@@ -124,7 +124,7 @@ return (
 | `text`   | String | Customize text |
 
 #### StepTitle
-StepTitle comes with no property, you can easily customize it by simply putting some text inside of it.
+StepTitle comes with no property, you can pass text as children.
 
 #### StepStatus
 
@@ -135,7 +135,7 @@ StepTitle comes with no property, you can easily customize it by simply putting 
 | `textPending`   | String | Customize text |
 
 #### StepDescription
-As StepTitle, you can customize StepDescription by putting text inside of it.
+As StepTitle, you can pass text as children.
 
 ### 🔹 useStepper
 
@@ -159,7 +159,7 @@ You can customize the appearance of the stepper in two ways:
 
 ### 🔹 Using the **theme** object:  
 
-```js
+```json
 {
   light: {
     step: {
@@ -283,4 +283,4 @@ You can customize the appearance of the stepper in two ways:
 
 - [Vishnu Prasad](https://dribbble.com/vlockn) for the cool and awesome [design inspiration](https://dribbble.com/shots/14012793/attachments/5628816?mode=media)
 - [Sergio Acosta](https://codepen.io/sergio_andresac/pens/public) for the cool and awesome [check mark animation](https://codepen.io/sergio_andresac/pen/NeYbMw)
-- @DrenSkywalker for the beautiful Readme 💜
+- [Dren Skywalker](https://github.com/DrenSkywalker) for the beautiful Readme 💜
