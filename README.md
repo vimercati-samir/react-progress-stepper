@@ -13,14 +13,8 @@
 <br/>
 <img src="./docs/stepper.gif" alt="Stepper gif">
 <img src="./docs/stepper_dark.gif" alt="Stepper dark gif">
-<br/><br/>
+<br/><br/><br/>
 </p>
-
-- [Installation](#⚙️-installation)
-- [Usage](#✔️-usage)
-- [Modules](#🔎-modules)
-- [Theming and Style Overrides](#🎨-theming-and-style-overrides)
-- [License and Credits](#✏️-license-and-credits)
 
 ## ⚙️ Installation
 
