@@ -2,6 +2,12 @@
 
 Minimal and beautiful stepper for React.
 
+##### Table of Contents
+
+⚙️ [Installation](#⚙️-installation)  
+✔️ [Usage](#✔️-usage)  
+✏️ [License and Credits](#✏️-license-and-credits)
+
 <p align="center">
 <br/><br/>
 <img src="./docs/stepper.gif" alt="Stepper gif">
@@ -10,12 +16,6 @@ Minimal and beautiful stepper for React.
 <a href="https://vimercati-samir.github.io/react-progress-stepper"><img src="https://img.shields.io/badge/LIVE DEMO-324A5E?style=flat"></a>
 <br/><br/>
 </p>
-
-##### Table of Contents
-
-⚙️ [Installation](#⚙️-installation)  
-✔️ [Usage](#✔️-usage)  
-✏️ [License and Credits](#✏️-license-and-credits)
 
 ## ⚙️ Installation
 
