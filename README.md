@@ -1,11 +1,12 @@
-# React Progress Stepper
-
-> Minimal and beautiful stepper for React.
-
 <p align="center">
 <br/>
 <img src="https://i.ibb.co/dKD1dYq/samir-repo.png">
-<br/><br/>
+<br/>
+</p>
+
+# <p align="center">React Progress Stepper</p>
+### <p align="center">Minimal and beautiful stepper for React.</p>
+<p align="center">
 <a href="https://vimercati-samir.github.io/react-progress-stepper"><img src="https://img.shields.io/badge/LIVE DEMO-324A5E?style=flat"></a>
 </p>
 
