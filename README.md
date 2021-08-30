@@ -10,11 +10,21 @@ Minimal and beautiful stepper for React.
 <br/>
 </p>
 
-##### Table of Contents
+##### Content
 
-⚙️ [Installation](#⚙️-installation)  
-✔️ [Usage](#✔️-usage)  
-✏️ [License and Credits](#✏️-license-and-credits)
+- [Installation](#⚙️-installation)
+- [Usage](#✔️-usage)
+- [Modules](#🔎-modules)
+  - [Stepper](#stepper)
+  - [Step](#step)
+  - [Content](#content)
+    - [StepNumber](#stepnumber)
+    - [StepTitle](#steptitle)
+    - [StepStatus](#stepstatus)
+    - [StepDescription](#stepdescription)
+  - [useStepper](#useStepper)
+- [Theming and Style Overrides](#🎨-theming-and-style-overrides)
+- [License and Credits](#✏️-license-and-credits)
 
 <p align="center">
 <br/><br/>
@@ -160,7 +170,7 @@ useStepper provides several utilities:
 - **decrementStep**: function to decrement state by one;
 - **goToStep**: function to set state to a specific step number.
 
-## Theming and style overrides
+## 🎨 Theming and Style Overrides
 
 You can customize the appearance of the stepper in two ways:
 
