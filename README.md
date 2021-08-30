@@ -159,7 +159,7 @@ You can customize the appearance of the stepper in two ways:
 
 ### 🔹 Using the **theme** object:  
 
-```json
+```js
 {
   light: {
     step: {
