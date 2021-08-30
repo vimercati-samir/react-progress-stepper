@@ -1,20 +1,34 @@
-# React Progress Stepper
+<p align="center">
+<br/>
+<img src="https://i.ibb.co/dKD1dYq/samir-repo.png">
+<br/>
+</p>
 
-Minimal and beautiful stepper for React.
+# <p align="center">React Progress Stepper</p>
+### <p align="center">Minimal and beautiful stepper for React.</p>
+<p align="center">
+<a href="https://vimercati-samir.github.io/react-progress-stepper"><img src="https://img.shields.io/badge/LIVE DEMO-23c275?style=flat"></a>
+<img src="https://img.shields.io/badge/Open%20Source-🤍-23c275">
+<img src="https://img.shields.io/github/stars/vimercati-samir/react-progress-stepper?color=23c275&label=Stars">
+<img src="https://img.shields.io/npm/dw/react-progress-stepper?color=23c275&label=Downloads">
+<img src="https://img.shields.io/github/license/vimercati-samir/react-progress-stepper?color=23c275&label=License">
+</p>
 
-[LIVE DEMO](https://vimercati-samir.github.io/react-progress-stepper)
-
+<p align="center">
+<br/>
 <img src="./docs/stepper.gif" alt="Stepper gif">
 <img src="./docs/stepper_dark.gif" alt="Stepper dark gif">
+<br/><br/>
+</p>
 
-## Installation
+## ⚙️ Installation
 
 ```shell
 $ npm i react-progress-stepper
 $ yarn add react-progress-stepper
 ```
 
-## Usage
+## 🚀 Usage
 
 ```js
 import React from 'react';
@@ -41,9 +55,9 @@ export default const App = () => {
 }
 ```
 
-## Modules
+## 🔎 Modules
 
-### Stepper
+### 🔹 Stepper
 
 | Property   | Type    | Description                             |
 | ---------- | ------- | --------------------------------------- |
@@ -53,13 +67,15 @@ export default const App = () => {
 | `numbered` | Boolean | Toggle if each step is numbered or not  |
 | `theme`    | Object  | Customize the appearance of the stepper |
 
-### Step
+### 🔹 Step
 
 | Property        | Type     | Description                  |
 | --------------- | -------- | ---------------------------- |
 | `customContent` | Function | Override step circle content |
 
-### Content
+### 🔹 Content
+
+You can customize the content of each step, as the example below:
 
 <img src="./docs/stepper_content.gif" alt="Stepper with content gif">    
   
@@ -76,9 +92,9 @@ import {
 } from "react-progress-stepper";
 
 export default const App = () => {
-  const { step, incrementStep, decrementStep } = useStepper(0, 3);
+const { step, incrementStep, decrementStep } = useStepper(0, 3);
 
-  return (
+return (
     <>
       <Stepper step={step}>
         <Step>
@@ -113,6 +129,7 @@ export default const App = () => {
 | `text`   | String | Customize text |
 
 #### StepTitle
+StepTitle comes with no property, you can pass text as children.
 
 #### StepStatus
 
@@ -123,15 +140,16 @@ export default const App = () => {
 | `textPending`   | String | Customize text |
 
 #### StepDescription
+StepDescription comes with no property, you can pass text as children.
 
-### useStepper
+### 🔹 useStepper
 
 Hook to handle the state of stepper easily, you could write your own logic to handle the state.
 
 To work properly you need to provide two arguments to useStepper:
 
 - **Number of current step**: starts from 0;
-- **Number of steps**.
+- **Number of total steps**.
 
 useStepper provides several utilities:
 
@@ -140,11 +158,11 @@ useStepper provides several utilities:
 - **decrementStep**: function to decrement state by one;
 - **goToStep**: function to set state to a specific step number.
 
-## Theming and style overrides
+## 🎨 Theming and Style Overrides
 
 You can customize the appearance of the stepper in two ways:
 
-1. Using the theme object:
+### 🔹 Using the **theme** object:  
 
 ```js
 {
@@ -249,7 +267,7 @@ You can customize the appearance of the stepper in two ways:
 }
 ````
 
-2. Overriding the CSS using class names, example:
+### 🔹 Overriding the **CSS** using class names, example:  
 
 ```css
 .step {
@@ -262,11 +280,12 @@ You can customize the appearance of the stepper in two ways:
 }
 ```
 
-## License and credits
+## ✏️ License and Credits
 
-react-progress-stepper is released under the MIT license, feel free to use it, share and modify.
+**React Progress Stepper** is released under the *MIT* license, feel free to use it, share and modify.
 
-Credits and special thanks to:
+### 🔹 Credits and special thanks to:
 
 - [Vishnu Prasad](https://dribbble.com/vlockn) for the cool and awesome [design inspiration](https://dribbble.com/shots/14012793/attachments/5628816?mode=media)
 - [Sergio Acosta](https://codepen.io/sergio_andresac/pens/public) for the cool and awesome [check mark animation](https://codepen.io/sergio_andresac/pen/NeYbMw)
+- [Dren Skywalker](https://github.com/DrenSkywalker) for the beautiful Readme 💜
