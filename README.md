@@ -137,14 +137,14 @@ StepTitle comes with no property, you can easily customize it by simply putting 
 #### StepDescription
 As StepTitle, you can customize StepDescription by putting text inside of it.
 
-### useStepper
+### 🔹 useStepper
 
 Hook to handle the state of stepper easily, you could write your own logic to handle the state.
 
 To work properly you need to provide two arguments to useStepper:
 
 - **Number of current step**: starts from 0;
-- **Number of steps**.
+- **Number of total steps**.
 
 useStepper provides several utilities:
 
@@ -157,7 +157,7 @@ useStepper provides several utilities:
 
 You can customize the appearance of the stepper in two ways:
 
-1. Using the theme object:
+### 🔹 Using the **theme** object:  
 
 ```js
 {
@@ -262,7 +262,7 @@ You can customize the appearance of the stepper in two ways:
 }
 ````
 
-2. Overriding the CSS using class names, example:
+### 🔹 Overriding the **CSS** using class names, example:  
 
 ```css
 .step {
@@ -277,10 +277,10 @@ You can customize the appearance of the stepper in two ways:
 
 ## ✏️ License and Credits
 
-react-progress-stepper is released under the MIT license, feel free to use it, share and modify.
+**React Progress Stepper** is released under the *MIT* license, feel free to use it, share and modify.
 
-Credits and special thanks to:
+### 🔹 Credits and special thanks to:
 
-- [x] [Vishnu Prasad](https://dribbble.com/vlockn) for the cool and awesome [design inspiration](https://dribbble.com/shots/14012793/attachments/5628816?mode=media)
-- [x] [Sergio Acosta](https://codepen.io/sergio_andresac/pens/public) for the cool and awesome [check mark animation](https://codepen.io/sergio_andresac/pen/NeYbMw)
-- [x] @DrenSkywalker for the beautiful Readme 💜
+- [Vishnu Prasad](https://dribbble.com/vlockn) for the cool and awesome [design inspiration](https://dribbble.com/shots/14012793/attachments/5628816?mode=media)
+- [Sergio Acosta](https://codepen.io/sergio_andresac/pens/public) for the cool and awesome [check mark animation](https://codepen.io/sergio_andresac/pen/NeYbMw)
+- @DrenSkywalker for the beautiful Readme 💜
