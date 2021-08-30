@@ -1,6 +1,6 @@
 # React Progress Stepper
 
-Minimal and beautiful stepper for React.
+> Minimal and beautiful stepper for React.
 
 <p align="center">
 <br/>
@@ -19,14 +19,6 @@ Minimal and beautiful stepper for React.
 - [Installation](#⚙️-installation)
 - [Usage](#✔️-usage)
 - [Modules](#🔎-modules)
-  - [Stepper](#stepper)
-  - [Step](#step)
-  - [Content](#content)
-    - [StepNumber](#stepnumber)
-    - [StepTitle](#steptitle)
-    - [StepStatus](#stepstatus)
-    - [StepDescription](#stepdescription)
-  - [useStepper](#useStepper)
 - [Theming and Style Overrides](#🎨-theming-and-style-overrides)
 - [License and Credits](#✏️-license-and-credits)
 
@@ -295,5 +287,6 @@ react-progress-stepper is released under the MIT license, feel free to use it, s
 
 Credits and special thanks to:
 
-- [Vishnu Prasad](https://dribbble.com/vlockn) for the cool and awesome [design inspiration](https://dribbble.com/shots/14012793/attachments/5628816?mode=media)
-- [Sergio Acosta](https://codepen.io/sergio_andresac/pens/public) for the cool and awesome [check mark animation](https://codepen.io/sergio_andresac/pen/NeYbMw)
+- [x] [Vishnu Prasad](https://dribbble.com/vlockn) for the cool and awesome [design inspiration](https://dribbble.com/shots/14012793/attachments/5628816?mode=media)
+- [x] [Sergio Acosta](https://codepen.io/sergio_andresac/pens/public) for the cool and awesome [check mark animation](https://codepen.io/sergio_andresac/pen/NeYbMw)
+- [x] @DrenSkywalker for the beautiful Readme 💜
