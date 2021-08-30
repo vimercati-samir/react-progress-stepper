@@ -23,8 +23,6 @@ $ npm i react-progress-stepper
 $ yarn add react-progress-stepper
 ```
 
-<br/><br/>
-
 ## ✔️ Usage
 
 ```js
@@ -54,7 +52,7 @@ export default const App = () => {
 
 ## 🔎 Modules
 
-### Stepper
+### 🔹 Stepper
 
 | Property   | Type    | Description                             |
 | ---------- | ------- | --------------------------------------- |
@@ -64,13 +62,13 @@ export default const App = () => {
 | `numbered` | Boolean | Toggle if each step is numbered or not  |
 | `theme`    | Object  | Customize the appearance of the stepper |
 
-### Step
+### 🔹 Step
 
 | Property        | Type     | Description                  |
 | --------------- | -------- | ---------------------------- |
 | `customContent` | Function | Override step circle content |
 
-### Content
+### 🔹 Content
 
 You can customize the content of each step, as the example below:
 
@@ -92,29 +90,29 @@ export default const App = () => {
 const { step, incrementStep, decrementStep } = useStepper(0, 3);
 
 return (
-<>
-<Stepper step={step}>
-<Step>
-<StepNumber />
-<StepTitle>Title</StepTitle>
-<StepStatus />
-<StepDescription>Description</StepDescription>
-</Step>
-<Step>
-<StepNumber />
-<StepTitle>Title</StepTitle>
-<StepStatus />
-<StepDescription>Description</StepDescription>
-</Step>
-<Step>
-<StepNumber />
-<StepTitle>Title</StepTitle>
-<StepStatus />
-<StepDescription>Description</StepDescription>
-</Step>
-</Stepper>
-</>
-)
+    <>
+      <Stepper step={step}>
+        <Step>
+          <StepNumber />
+          <StepTitle>Title</StepTitle>
+          <StepStatus />
+          <StepDescription>Description</StepDescription>
+        </Step>
+        <Step>
+          <StepNumber />
+          <StepTitle>Title</StepTitle>
+          <StepStatus />
+          <StepDescription>Description</StepDescription>
+        </Step>
+        <Step>
+          <StepNumber />
+          <StepTitle>Title</StepTitle>
+          <StepStatus />
+          <StepDescription>Description</StepDescription>
+        </Step>
+      </Stepper>
+    </>
+  )
 }
 
 ````
