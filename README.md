@@ -7,7 +7,11 @@
 # <p align="center">React Progress Stepper</p>
 ### <p align="center">Minimal and beautiful stepper for React.</p>
 <p align="center">
-<a href="https://vimercati-samir.github.io/react-progress-stepper"><img src="https://img.shields.io/badge/LIVE DEMO-324A5E?style=flat"></a>
+<a href="https://vimercati-samir.github.io/react-progress-stepper"><img src="https://img.shields.io/badge/LIVE DEMO-23c275?style=flat"></a>
+<img src="https://img.shields.io/badge/Open%20Source-🤍-23c275">
+<img src="https://img.shields.io/github/stars/vimercati-samir/react-progress-stepper?color=23c275&label=Stars">
+<img src="https://img.shields.io/npm/dw/react-progress-stepper?color=23c275&label=Downloads">
+<img src="https://img.shields.io/github/license/vimercati-samir/react-progress-stepper?color=23c275&label=License">
 </p>
 
 <p align="center">
