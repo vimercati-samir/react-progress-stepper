@@ -135,7 +135,7 @@ StepTitle comes with no property, you can pass text as children.
 | `textPending`   | String | Customize text |
 
 #### StepDescription
-As StepTitle, you can pass text as children.
+StepDescription comes with no property, you can pass text as children.
 
 ### 🔹 useStepper
 
